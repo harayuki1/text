@@ -35,9 +35,28 @@ public class main {
 			System.out.println("aは"+a+"でした");
 		}
 		
-		//関係演算子は
+		//関係演算子は == < =< >= >などがある
 		
 		//switch文について
+		//条件が具体的な値である時に使う　文字でも数字でも良い
+		switch(b) {
+		case "おはよう":
+			System.out.println("おはようが選ばれた");
+			break;
+		case "こんにちは":
+			System.out.println("こんにちはが選ばれた");
+			break;
+		case "こんばんは":
+			System.out.println("こんばんはが選ばれた");
+			break;
+		default:
+			System.out.println("defaultが選ばれた");
+			break;
+		}
+		//case の後に書かれた値とswitch()の()内に入れた内容が入れた値が同じ時に、
+		//その文を実行する。
+		//その文の中にbreakを書かないと、breakが見つかるまで文を実行し続けるので注意
+		//defaultはswitch()の()の値が存在しなかったときに、実行される
 		
 		//繰り返し文について
 		//while文
